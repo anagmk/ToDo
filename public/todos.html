@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+  <div class="app">
+    <div class="header-row">
+      <h1 class="app-title">Todo App</h1>
+      <button id="logout-btn" class="logout-btn">Logout</button>
+    </div>
+
+    <!-- Add Task -->
+    <form class="task-form" id="task-form">
+      <input type="text" id="title" name="title" class="task-input" placeholder="Enter task title..." required />
+      <input type="text" id="description" name="description" class="task-input task-description" placeholder="Enter task description..." />
+
+      <select id="priority" class="task-priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <button type="submit" class="add-btn">Add</button>
+    </form>
+
+    <!-- Task List -->
+    <ul class="task-list" id="todos">
+<!-- 
+      <li class="task-item" data-id="1">
+        <span class="title"></span>
+        <span class="description"></span>
+        <span class="priority low"></span>
+        <button class="delete-btn">Delete</button>
+      </li> -->
+
+
+    </ul>
+  </div>
+
+
+  <script src="/todos.js"></script>
+</body>
+
+</html>
