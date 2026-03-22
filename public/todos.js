@@ -132,7 +132,7 @@ if (taskForm) {
             return;
         }
 
-        fetch('http://localhost:3001/api/todos', {
+        fetch('/api/user/todos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -176,7 +176,7 @@ if (todoListEl) {
                 return;
             }
 
-            fetch(`http://localhost:3001/api/todos/${id}`, {
+            fetch(`/api/user/todos/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -218,7 +218,7 @@ if (todoListEl) {
 
             const wasCompleted = li.classList.contains('completed');
 
-            fetch(`http://localhost:3001/api/todos/${id}`, {
+            fetch(`/api/user/todos/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
