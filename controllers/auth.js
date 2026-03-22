@@ -1,4 +1,3 @@
-const { genSalt } = require("bcrypt");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 const jwtToken = require('jsonwebtoken')

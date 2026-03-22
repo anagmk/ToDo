@@ -27,6 +27,11 @@ const TaskSchema = new mongoose.Schema({
     type:mongoose.Schema.Types.ObjectId,
     ref:'User',
     required:true
+  },
+  cost: {
+    required: true,
+    type: Number,
+    default: 0
   }
 });
 
