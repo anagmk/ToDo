@@ -48,7 +48,7 @@ function renderTodos(todos) {
 
 function loadTodos() {
     if (!token) return;
-    fetch('/api/user/todos', {
+    fetch('/api/todos', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -132,7 +132,7 @@ if (taskForm) {
             return;
         }
 
-        fetch('/api/user/todos', {
+        fetch('/api/todos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -176,7 +176,7 @@ if (todoListEl) {
                 return;
             }
 
-            fetch(`/api/user/todos/${id}`, {
+            fetch(`/api/todos/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -218,7 +218,7 @@ if (todoListEl) {
 
             const wasCompleted = li.classList.contains('completed');
 
-            fetch(`/api/user/todos/${id}`, {
+            fetch(`/api/todos/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
