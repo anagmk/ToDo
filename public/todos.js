@@ -48,7 +48,7 @@ function renderTodos(todos) {
 
 function loadTodos() {
     if (!token) return;
-    fetch('/api/user/login', {
+    fetch('/api/user/todos', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
