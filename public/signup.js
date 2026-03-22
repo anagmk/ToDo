@@ -7,7 +7,7 @@ myform.addEventListener("submit", async (e) => {
     const name = document.getElementById("name").value;
 
     try {
-        const response = await fetch("http://localhost:3001/api/user/signup", {
+        const response = await fetch('/api/user/signup', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
